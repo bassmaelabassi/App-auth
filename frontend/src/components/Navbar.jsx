@@ -1,25 +1,14 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-800 p-4 text-white">
-            <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-xl font-bold">AuthApp</h1>
-                <ul className="flex space-x-4">
-                    <li>
-                        <Link to="/" className="hover:text-gray-400">Accueil</Link>
-                    </li>
-                    <li>
-                        <Link to="/login" className="hover:text-gray-400">Connexion</Link>
-                    </li>
-                    <li>
-                        <Link to="/register" className="hover:text-gray-400">Inscription</Link>
-                    </li>
-                </ul>
+        <nav className="bg-gray-900 text-white p-4 flex justify-between">
+            <h1 className="text-xl font-bold">Mon Site</h1>
+            <div>
+                <Link to="/" className="px-4 hover:text-gray-400">Accueil</Link>
+                <Link to="/login" className="px-4 hover:text-gray-400">Connexion</Link>
+                <Link to="/register" className="px-4 hover:text-gray-400">Inscription</Link>
             </div>
         </nav>
     );
 };
-
-export default Navbar;
